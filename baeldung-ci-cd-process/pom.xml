@@ -40,7 +40,8 @@
 			</plugin>
 		</plugins>
 	</build>
-<profile>
+<profiles>
+	<profile>
     <id>deploy-docker</id>
     <properties>
         <maven.deploy.skip>true</maven.deploy.skip>
@@ -64,4 +65,5 @@
         </plugins>
     </build>
 </profile>
+	</profiles>
 </project>

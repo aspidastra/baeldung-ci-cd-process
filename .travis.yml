@@ -1,5 +1,5 @@
 language: java
 jdk:
   - openjdk11
-script:
-  - ./mvnw clean install
+script: 
+  - cd baeldung-ci-cd-process && ./mvnw clean install

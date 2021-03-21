@@ -9,3 +9,4 @@ before_install:
 script:
   - cd baeldung-ci-cd-process && ./mvnw clean install
   - cd baeldung-ci-cd-process && ./mvnw deploy jib:build -P deploy-docker
+  

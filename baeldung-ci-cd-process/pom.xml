@@ -54,7 +54,7 @@
                 <version>2.2.0</version>
                 <configuration>
                     <to>
-                        <image>${aspidasra}/baeldung-ci-cd-process</image>
+                        <image>${aspidastra}/baeldung-ci-cd-process</image>
                         <tags>
                             <tag>${project.version}</tag>
                             <tag>latest</tag>

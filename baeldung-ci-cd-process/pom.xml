@@ -39,15 +39,6 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-		</plugins>
-	</build>
-	<profile>
-    <id>deploy-docker</id>
-    <properties>
-        <maven.deploy.skip>true</maven.deploy.skip>
-    </properties>
-    <build>
-        <plugins>
             <plugin>
                 <groupId>com.google.cloud.tools</groupId>
                 <artifactId>jib-maven-plugin</artifactId>
@@ -62,7 +53,7 @@
                     </to>
                 </configuration>
             </plugin>
-        </plugins>
-    </build>
-</profile>
+		</plugins>
+	</build>
+	<profile>
 </project>

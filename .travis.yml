@@ -8,5 +8,8 @@ before_install:
 
 script:
   - cd baeldung-ci-cd-process
-  - ./mvnw clean install
+  - ./mvnw clean org.jacoco:jacoco-maven-plugin:prepare-agent install
   - ./mvnw deploy jib:build -P deploy-docker
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
